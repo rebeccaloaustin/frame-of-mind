@@ -1,0 +1,19 @@
+{% extends 'base.html' %} 
+{% block content %}
+<div class="container">
+  <h1>Art Details</h1>
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Name: {{ art.name }}</h5>
+      <p class="card-text">Artist: {{ art.artist }}</p>
+      <img src="{{ art.image }}" class="card-img-top img-fluid" alt="Artwork Image">
+      <p class="card-text">{{ art.description }}</p>
+    </div>
+    <div class="card-footer">
+      <a href="{% url 'artworks_update' art.id %}" class="btn">Edit</a>
+      <a href="{% url 'artworks_delete' art.id %}" class="btn">Delete</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

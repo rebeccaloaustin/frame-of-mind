@@ -1,0 +1,27 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/artist_index.css' %}">
+
+{% block content %}
+<main class="container">
+    <h1>Featured Artists</h1>
+
+    <div class="artists-container">
+        {% for artist in artists %}
+        <div class="artist">
+            <figure class="featured-artist">
+                <a href="{% url 'artists_detail' artist.id %}">
+                    <div class="artist-image">
+                        <img src="{{ artist.image }}" alt="{{ artist.name }}" class="artist-image">
+                    </div>
+                    <div class="details">
+                        <h3 class="artist-name">{{ artist.name }}</h3>
+                    </div>
+                </a>
+            </figure>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}

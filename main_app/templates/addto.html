@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/addto.css' %}">
+{% block content %}
+<div class="container">
+  <h1 class="text-center">Would you like to</h1>
+  <div class="d-flex justify-content-center">
+    <div class="image-container">
+      <a href="{% url 'artworks_create' %}" class="image-link">
+        <img src="https://images.pexels.com/photos/3209471/pexels-photo-3209471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Add Art">
+        <div class="image-text">Add art</div>
+      </a>
+    </div>
+    <div class="image-container">
+      <a href="{% url 'artists_create' %}" class="image-link">
+        <img src="https://images.pexels.com/photos/13937192/pexels-photo-13937192.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Add Artist">
+        <div class="image-text">Add artist</div>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

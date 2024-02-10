@@ -1,0 +1,31 @@
+{% extends 'base.html' %} 
+{% block content %}
+<div class="container">
+  <h1>Artist Details</h1>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title">{{ artist.name }}</h5>
+      <img src="{{ artist.image }}" class="img-fluid mb-3" alt="Artist Image">
+      <p>{{ artist.about }}</p>
+    </div>
+    <div class="card-footer">
+      <a href="{% url 'artists_update' artist.id %}" class="btn">Edit</a>
+      <a href="{% url 'artists_delete' artist.id %}" class="btn">Delete</a>
+    </div>
+  </div>
+
+  {% if artworks %}
+  <h2 class="ArtistH">Artworks</h2>
+  <div class="row">
+    {% for art in artworks %}
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="{{ art.image }}" class="card-img-top img-fluid" alt="Artwork Image">
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+.image-container {
+    text-align: center;
+  }
+  
+  .image-text {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .image-container img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .image-link {
+    margin: 0 20px; /* Add spacing between images */
+  }
+  
+  

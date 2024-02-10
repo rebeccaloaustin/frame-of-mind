@@ -1,0 +1,15 @@
+{% extends 'base.html' %} 
+{% block content %}
+<h1>Artworks</h1>
+
+<div class="row" id="artworks-grid">
+  {% for art in artworks %}
+  <div class="col-sm-6 col-lg-4 mb-4 artwork-item">
+    <a href="{% url 'artworks_detail' art.id %}">
+      <img src="{{ art.image }}" class="img-fluid">
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
+
