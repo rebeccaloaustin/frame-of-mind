@@ -12,7 +12,16 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center;
-    margin-left: 6vw;
+    margin-left: 10vw;
+    border-radius: 0.5%;
+}
+#artworkDetailImage{
+    width: 50vw;
+    max-height: 90vh;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 10vw;
     border-radius: 0.5%;
 }
 .img-fluid{

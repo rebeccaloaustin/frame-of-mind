@@ -1,54 +1,73 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 h1 {
-    color: white;
-    font-size: 50px;
-    position: fixed;  
-    top: 50%;        
-    left: 50%;      
-    transform: translate(-50%, -50%);
-    border: 3px solid white;
-    font-family: "Raleway", sans-serif;
-    font-weight: 100;
-    letter-spacing: 0.3em;
-    padding: 2.5%;
+  color: white;
+  font-size: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.3em;
+  padding: 2.5%;
 }
-h1:hover{
-    background-color: rgba(255, 255, 255, 0.334)
+h2 {
+  color: white;
+  font-size: 35px;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+h1:hover {
+  background-color: rgba(255, 255, 255, 0.148);
 }
 #landingvideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: -1; 
-    object-fit: cover;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh;
-    width: 100vw;
-    aspect-ratio: 1/1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
 }
 
 @media (min-width: 280px) and (max-width: 624px) {
-    #landingvideo {
-        min-width: 100%; 
-        min-height: auto; 
-        aspect-ratio: 1/1;
-  object-fit: cover;
-  object-position: center;
-    }
-    h1 {
-        font-size: 25px; 
-        text-align: center;
-        position: fixed;      
-        top:40%;
-        left: 50vw;
-    }
+  #landingvideo {
+    min-width: 100%;
+    min-height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+  }
+  h1 {
+    font-size: 25px;
+    text-align: center;
+    position: fixed;
+    top: 40%;
+    left: 50vw;
+  }
+  h2 {
+    font-size: 25px;
+    text-align: center;
+    position: fixed;
+    top: 25%;
+    left: 50vw;
+  }
 }

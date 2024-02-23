@@ -11,7 +11,7 @@
   <div>
     <div class="card-body">
       <a href="{% url 'artists_detail' art.artist.id %}" class="card-text" id="byArtist">Artist: {{ art.artist }}</a>
-      <img src="{{ art.image }}" class="card-img-top img-fluid" alt="Artwork Image">
+      <img src="{{ art.image }}" class="card-img-top img-fluid" id="artworkDetailImage" alt="Artwork Image">
       <p class="card-text aboutInfo">{{ art.description }}</p>
     </div>
     <div class="btns">
