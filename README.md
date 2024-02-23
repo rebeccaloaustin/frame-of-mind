@@ -1,4 +1,4 @@
-# Frame-of-Mind :framed_picture:
+# Frame of Mind :framed_picture:
 
 ## Overview
 Frame-of-Mind is an immersive Django web application designed to deepen your appreciation for art. Discover, explore, and engage with your favorite artists and artworks, allowing you to broaden your perspective and change your frame of mind. The application seamlessly integrates One-to-Many Relationships between artists and artworks, empowering users to curate their collections and delve into the captivating world of artistic expression. Whether you're an avid art enthusiast or a curious beginner, Frame-of-Mind provides a dynamic platform to learn, connect, and evolve your understanding of art. :art:
