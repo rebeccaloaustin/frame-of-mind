@@ -11,7 +11,7 @@ def addto(request):
     return render(request, 'addto.html')
 def artworks_index(request):
   artworks = Art.objects.all()
-  return render(request, 'artworks/index.html', { 'artworks': artworks })
+  return render(request, 'artworks/artworks_index.html', { 'artworks': artworks })
 def artworks_detail(request, art_id):
     art = Art.objects.get(id=art_id)
     return render(request, 'artworks/artworks_detail.html', { 'art': art })
@@ -21,7 +21,7 @@ class ArtCreate(CreateView):
     success_url = '/artworks/'
 class ArtUpdate(UpdateView):
   model = Art
-  fields = ['name', 'image','style','description']
+  fields = ['name', 'image','description']
 
 class ArtDelete(DeleteView):
   model = Art
@@ -29,7 +29,7 @@ class ArtDelete(DeleteView):
 
 def artists_index(request):
   artists = Artist.objects.all()
-  return render(request, 'artists/index.html', { 'artists': artists })
+  return render(request, 'artists/artists_index.html', { 'artists': artists })
 def artists_detail(request, artist_id):
     artist = Artist.objects.get(id=artist_id)
     artworks = artist.art_set.all()

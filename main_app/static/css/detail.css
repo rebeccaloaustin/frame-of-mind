@@ -1,0 +1,88 @@
+.detailTitle{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    letter-spacing: 0.3em;
+    margin-top: 15vh;
+}
+
+#artistDetailImage{
+    width: 50vw;
+    height: 80vh;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 6vw;
+    border-radius: 0.5%;
+}
+.img-fluid{
+    margin-top: 5vh;
+}
+.aboutInfo{
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 0.03em;
+    margin-top: 6vh;
+    line-height: 35px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: center;
+
+}
+.btns{
+    font-family: "Manrope", sans-serif;
+    text-align: right;
+}
+.btn{
+    color: white;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 0.03em;
+    border-color: white;
+    margin-bottom: 5vh;
+}
+.btn:hover{
+    color:black;
+    background-color: white;
+    border-color: black;
+}
+.ArtistH{
+    text-align: center;
+    letter-spacing: 0.5em;
+    margin-bottom: 3vh;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+}
+.decorative-line {
+    border: none;
+    height: 0.5px; 
+    background-color: white; 
+    margin: 30px 2; 
+    margin-bottom: 2vh;
+}
+.row{
+    margin-top: 5vh;
+}
+
+#byArtist{
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    color: white;
+}
+#byArtist:hover{
+    color: white;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    #artistDetailImage{width: 80vw; 
+    height: 35vh; 
+    margin-left: auto; 
+    margin-right: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;}
+    .detailTitle{
+        margin-top: 5vh;
+        font-size: 22px;
+    }
+}

@@ -1,50 +1,61 @@
-.container{
+.container {
     text-align: center;
 }
+
 .artists-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 40px;
 }
 
-.artist {
-    flex: 0 0 calc(33.333% - 20px); 
-    margin: 0 -90px 20px;  
+#featured-artists{
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: 0.3em;
+    margin-top: 10vh;
 }
-
 .featured-artist {
     position: relative;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
-
 .artist-image {
-    width: 300px; 
-    height: 300px; 
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     overflow: hidden;
     transition: filter 0.3s ease-in-out;
     filter: grayscale(90%);
     aspect-ratio: 1/1;
     object-fit: cover;
+    object-position: center;
+    transition: transform 0.2s ease-in-out;
 }
 
 .details {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-100%, -80%);
+    transform: translate(-50%, -50%);
     opacity: 0;
     text-align: center;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    font-family: "Manrope", sans-serif;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
 }
 
 .artist-name {
     color: white;
     margin: 0;
-    font-size: 20px;
+    font-size: 18px; 
 }
 
 .featured-artist:hover .artist-image {
     filter: grayscale(0%);
+    transform: scale(1.05);
 }
 
 .featured-artist:hover .details {
@@ -52,7 +63,34 @@
 }
 
 h1 {
-    padding: 60px 0px 40px 0px;
-    text-transform: uppercase;
-    font-size: 60px;
+    padding: 40px 0; 
+    font-size: 40px; 
+}
+@media (max-width: 768px) {
+    .artist-image {
+        width: 200px; 
+        height: 200px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-bottom: 20px; 
+    }
+
+    #featured-artists {
+        margin-top: 2vh; 
+        font-size: 22px; 
+        text-align: center; 
+    }
+
+    .artists-container {
+        gap: 5px; 
+    }
+    #artistCircles{
+        margin-bottom: -5vh!important;
+    }
+    .details {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        text-align: center;}
 }

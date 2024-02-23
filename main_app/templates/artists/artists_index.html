@@ -1,19 +1,20 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% load static %}
 
+{% block csslinks %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/artist_index.css' %}">
+{% endblock %}
 
 {% block content %}
 <main class="container">
-    <h1>Featured Artists</h1>
-
-    <div class="artists-container">
+    <h1 class="mb-4" id="featured-artists">Featured Artists</h1>
+    <div class="row artists-container">
         {% for artist in artists %}
-        <div class="artist">
+        <div class="col-lg-3 col-md-4 col-6" id="artistCircles">
             <figure class="featured-artist">
                 <a href="{% url 'artists_detail' artist.id %}">
                     <div class="artist-image">
-                        <img src="{{ artist.image }}" alt="{{ artist.name }}" class="artist-image">
+                        <img src="{{ artist.image }}" style="aspect-ratio: 1/1; object-fit: cover;" alt="{{ artist.name }}" class="artist-image">
                     </div>
                     <div class="details">
                         <h3 class="artist-name">{{ artist.name }}</h3>

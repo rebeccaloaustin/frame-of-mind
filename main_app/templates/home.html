@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tempo</title>
+    <title>Frame of Mind</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
 </head>
 {% block content %}
 <video autoplay loop muted id="landingvideo">
     <source src="{% static 'backgrounds/painting.mp4' %}" type="video/mp4">
 </video>
-<a href="/artworks/"><h1>View Artworks</h1></a>
+<a href="/artists/"><h1 class="homebtn">View Artists</h1></a>
 {% endblock %}

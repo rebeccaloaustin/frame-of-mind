@@ -1,14 +1,19 @@
-{% extends 'base.html' %} {% block content %}
-<h1>Delete Artist</h1>
+{% extends 'base.html' %} 
+{% load static %}
+{% block csslinks %}
+<link rel="stylesheet"  type="text/css"href="{% static 'css/forms.css' %}">
+{% endblock %}
+{% block content %}
+<h1 class="delete-form-title">Delete Artist</h1>
 
-<h4>
+<h4 class="delete-form">
   Are you sure you want to delete {{artist.name}}
   <span>{{ object.artist }}</span>?
 </h4>
 
-<form action="" method="POST">
+<form action="" method="POST" class="delete-form">
   {% csrf_token %}
   <input type="submit" value="Yes - Delete!" class="btn" />
-  <a href="{% url 'artists_detail' artist.id %}">Cancel</a>
+  <a href="{% url 'artists_detail' artist.id %}" class="btn">Cancel</a>
 </form>
 {% endblock %}

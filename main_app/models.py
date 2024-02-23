@@ -9,7 +9,7 @@ class Artist(models.Model):
     def __str__(self):
         return self.name
     def get_absolute_url(self):
-        return reverse('detail', kwargs={'artist_id': self.id})
+        return reverse('artists_detail', kwargs={'artist_id': self.id})
 class Art(models.Model): 
     name = models.CharField(max_length=100)
     image = models.CharField(max_length=250)
@@ -18,7 +18,7 @@ class Art(models.Model):
     def __str__(self):
         return self.name
     def get_absolute_url(self):
-        return reverse('detail', kwargs={'art_id': self.id})
+        return reverse('artworks_detail', kwargs={'art_id': self.id})
     
 
 

@@ -1,17 +1,31 @@
-{% extends 'base.html' %} {% block content %}
-<h1>About Frame of Mind</h1>
-<hr />
-<p>
-  Welcome to Frame of Mind, where art meets attitude! Prepare to embark on a
-  journey through a whimsical wonderland of creativity and chaos, where every
-  brushstroke tells a story and every sculpture has a secret. At Frame of Mind,
-  we've curated an eclectic collection of artworks that'll make you think,
-  laugh, and maybe even scratch your head in confusion. From the classics to the
-  quirky, our gallery has something for everyone, whether you're a seasoned art
-  connoisseur or just looking for a good laugh. But we're not just here to
-  showcase art—we're here to shake things up! Got an artist or artwork that's
-  been living rent-free in your mind? Share it with us, and let's add some color
-  to this canvas we call life. So, strap in, buckle up, and get ready to have
-  your mind blown (figuratively, of course) at Frame of Mind!
-</p>
+{% extends 'base.html' %} 
+{% load static %}
+{% block csslinks %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <hr />
+      <img src="https://cdn.thecollector.com/wp-content/uploads/2022/03/michelangelo-adam-god-close-up.jpg?width=1400&quality=55" id="aboutPic">
+      <h1 class="aboutTitle">About Frame of Mind</h1>
+      <p class="aboutparagraph">
+        Welcome to Frame of Mind, where art meets attitude! Prepare to embark on a
+        journey through a whimsical wonderland of creativity and chaos, where every
+        brushstroke tells a story and every sculpture has a secret. At Frame of Mind,
+        we've curated an eclectic collection of artworks that'll make you think,
+        laugh, and maybe even scratch your head in confusion. From the classics to the
+        quirky, our gallery has something for everyone, whether you're a seasoned art
+        connoisseur or just looking for a good laugh. But we're not just here to
+        showcase art—we're here to shake things up! Got an artist or artwork that's
+        been living rent-free in your mind? Share it with us, and let's add some color
+        to this canvas we call life. So, strap in, buckle up, and get ready to have
+        your mind blown (figuratively, of course) at Frame of Mind!
+      </p>
+    </div>
+  </div>
+  <hr class="decorative-line">
+</div>
+
 {% endblock %}
