@@ -12,9 +12,10 @@ Frame-of-Mind is an immersive Django web application designed to deepen your app
 - Django
 - Python
 - Bootstrap
+- PostgreSQL
 
 ## Getting Started 
-Click to visit [Link Coming Soon]('LINK') and evolve your understanding of art! 
+Click to visit [Link]('https://frame-of-mind.onrender.com/') and evolve your understanding of art! 
 
 ## Screenshots :camera_flash:
 <img width="1512" alt="Screenshot 2024-02-22 at 9 07 11 PM" src="https://github.com/rebeccaloaustin/frame-of-mind/assets/141693053/76e22808-dcff-4e2c-bab1-159a8d967bb1">
